@@ -1,0 +1,17 @@
+1. Domains beyond Amazon.com
+- My crawler could be modified for domains beyond Amazon somewhat easily. Assuming that we have the same goal of pulling product details off of
+a webpage, we would just need to change the starting URL and the intermediate paths that lead us to the product page. Once on the product page,
+I would just need to write new functions with logic specific to those products. The process of gathering links and navigating to the right ones
+doesn't really change too much with a different starting domain.
+
+2. Product beyond just simply books
+- My crawler could very easily be modified for Amazon products beyond just books. It would just be a matter of changing the category variable
+in the getPageLinks() function to the path of the category you want. Then, I would have to write new logic for those products to gather the
+product details.
+
+To run my web crawler, simply do the following:
+
+    npm install
+    node crawler.js
+
+All results will be output to products.json file.
